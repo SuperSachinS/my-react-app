@@ -7,12 +7,23 @@ cd my-react-app
 */
 import './App.css';
 import MyComponent from './MyComponent';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+const SecondPage = () => {
+  return <h1>This is the second page of my website</h1>;
+};
 
 function App() {
   return (
-    <div>
-      <MyComponent />
-    </div>
+    <Router>
+      <div>
+        <MyComponent />
+        <Routes>
+          <Route path="/second-page" component = {SecondPage} />
+        </Routes>
+      </div>
+    </Router>
+    
   );
 }
 
