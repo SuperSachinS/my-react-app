@@ -1,27 +1,17 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
+/*
+starting up website
+fnm env --use-on-cd | Out-String | Invoke-Expression
+fnm use --install-if-missing 20
+cd my-react-app
+*/
 import './App.css';
 import MyComponent from './MyComponent';
 
 function App() {
   return (
-    <div className="App">
-      <div className = "App">
-        <MyComponent />
-      </div>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <MyComponent />
     </div>
   );
 }

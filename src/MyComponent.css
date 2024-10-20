@@ -1,7 +1,23 @@
-.my-component {
+.default-style {
     text-align: center;
-    color: blue;
+    color: darkred;
     background-color: darkgray;
-    padding: 20px;
-    border-radius: 10px;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 5px solid turquoise;
+}
+
+.subheader-style {
+    text-align: center;
+    color: darkblue;
+
+}
+
+.gif-style {
+    width: 400px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 50px;
 }
